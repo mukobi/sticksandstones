@@ -9,8 +9,6 @@ var changeBackground = function() {
   do {
     var colorIndex = Math.floor(Math.random() * colorPalette.length);
     newColor = colorPalette[colorIndex];
-    console.log(newColor);
-    console.log("old: " + rgb2hex($("body").css("background-color")));
   }
   while (newColor === rgb2hex($("body").css("background-color")))
 
