@@ -26,11 +26,15 @@ html, body {
 * {
   color: white;
   font-family: 'Encode Sans Condensed', sans-serif;
-  /*border: 1px solid teal;*/
+  margin: 0;
+}
+
+.line_white_space {
+  white-space: pre-line;
 }
 
 .head {
-  height: 80vh;
+  height: 60vh;
   position: relative;
 }
 
@@ -67,6 +71,7 @@ html, body {
 }
 
 .navigation > a {
+  color: white;
   display: block;
   height: 100%;
   line-height: 5vh;
@@ -80,6 +85,7 @@ html, body {
 }
 
 .navigation > a:hover {
+  color: white;
   flex-grow: 2;
 }
 
@@ -96,7 +102,7 @@ html, body {
 
 @media only screen and (max-width: 500px) {
   .about > p {
-    font-size: 100%;
+    font-size: 120%;
   }
 
   .navigation {
@@ -108,4 +114,77 @@ html, body {
     width: 50%;
     height: 50%;
   }
+}
+
+.content {
+  width: 99%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.single_content {
+  width: 32%;
+}
+@media only screen and (max-width: 900px) {
+  .single_content {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .single_content {
+    width: 100%;
+  }
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content * {
+  /*border: 1px solid rgba(255,255,255,0.2);*/
+}
+
+.content h3 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  transition: all 240ms;
+  position: relative;
+  top: 0;
+  line-height: 40px;
+}
+
+.single_content:hover h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  top: -15px;
+}
+
+.content img {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: all 240ms;
+}
+
+.single_content:hover img {
+  padding: 0;
+  margin-bottom: 39px;
+}
+
+.content p {
+  padding: 20px;
+  text-align: justify;
+  transition: all 240ms;
+  margin-bottom: 0;
+  position: relative;
+  top: 0;
+  text-decoration: none;
+}
+
+.single_content:hover p {
+  top: -10px;
 }

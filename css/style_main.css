@@ -91,6 +91,7 @@ html, body {
 
 .navigation > a:hover {
   flex-grow: 2;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
