@@ -33,6 +33,21 @@ html, body {
   white-space: pre-line;
 }
 
+.width-third {
+  width: 32%;
+}
+
+.width-half {
+  width: 49%;
+}
+
+.width-full {
+  width:100%;
+}
+
+
+
+
 .head {
   height: 60vh;
   position: relative;
@@ -126,7 +141,6 @@ html, body {
 }
 
 .single_content {
-  width: 32%;
   margin: 10px;
 }
 @media only screen and (max-width: 900px) {
@@ -142,10 +156,6 @@ html, body {
 
 .content a {
   text-decoration: none;
-}
-
-.content * {
-  /*border: 1px solid rgba(255,255,255,0.2);*/
 }
 
 .content h3 {
