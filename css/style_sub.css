@@ -140,6 +140,10 @@ html, body {
   justify-content: center;
 }
 
+.content p {
+  font-size: 130%;
+}
+
 .single_content {
   margin: 10px;
 }
