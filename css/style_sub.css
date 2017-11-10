@@ -21,6 +21,9 @@ html, body {
   bottom: 0;
   top: 0;
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -33,23 +36,9 @@ html, body {
   white-space: pre-line;
 }
 
-.width-third {
-  width: 32%;
-}
-
-.width-half {
-  width: 49%;
-}
-
-.width-full {
-  width:100%;
-}
-
-
-
-
 .head {
   height: 60vh;
+  min-height: 500px;
   position: relative;
 }
 
@@ -77,6 +66,7 @@ html, body {
 
 .navigation {
   height: 5vh;
+  min-height: 40px;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -89,7 +79,9 @@ html, body {
   color: white;
   display: block;
   height: 100%;
-  line-height: 5vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   flex-grow: 1;
   text-align: center;
   text-decoration: none;
@@ -105,13 +97,9 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
-  .navigation > a, .head > .wrapper {
+  .head > .wrapper {
     background-color: rgba(0,0,0,0);
     border: none;
-  }
-
-  .navigation > a {
-    text-decoration: underline;
   }
 }
 
@@ -122,40 +110,33 @@ html, body {
 
   .navigation {
     flex-wrap: wrap;
-    height: 20vh;
+    height: 120px;
   }
 
   .navigation > a {
     width: 50%;
-    height: 50%;
+    height: 60px;
+    line-height: 60px;
   }
 }
 
 .content {
   width: 99%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+@media only screen and (max-width: 460px) {
+  .content {
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
 
 .content p {
   font-size: 130%;
-}
-
-.single_content {
-  margin: 10px;
-}
-@media only screen and (max-width: 900px) {
-  .single_content {
-    width: 49%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .single_content {
-    width: 100%;
-  }
 }
 
 .content a {
