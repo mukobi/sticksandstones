@@ -15,7 +15,7 @@
   <meta charset="utf-8"/>
   <title>Desktop - Sticks and Stones Software</title>
 </head>
-<body style="background-color: #3360DC;">
+<body style="background-color: #3360DC;" id="particles-js">
   <div class="navigation">
     <a href="index.html">Home</a>
     <a href="websites.html">Websites</a>
@@ -48,4 +48,10 @@
     </div>
   </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS.load('particles-js', 'assets/particles/desktop.json', function() {
+  console.log('particles config file loaded');
+});
+</script>
 </html>
