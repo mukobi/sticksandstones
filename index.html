@@ -12,9 +12,10 @@
   </script>
   <script src="js/script_main.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"/>
   <title>Sticks and Stones Software</title>
 </head>
-<body>
+<body id="particles-js">
   <div class="head">
     <div class="wrapper">
       <div class="title">
@@ -37,4 +38,10 @@
     </div>
   </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+<script>
+particlesJS.load('particles-js', 'assets/particles/index.json', function() {
+  console.log('particles config file loaded');
+});
+</script>
 </html>

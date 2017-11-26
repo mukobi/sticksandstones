@@ -46,8 +46,8 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0,0,0, 0.2);
-  border: 1px solid rgba(255,255,255, 0.2);
+  background-color: rgba(0,0,0, 0.4);
+  border: 1px solid rgba(255,255,255, 0.4);
   padding: 4vh;
 }
 
@@ -88,8 +88,8 @@ html, body {
   flex-grow: 1;
   text-align: center;
   text-decoration: none;
-  background-color: rgba(0,0,0, 0.2);
-  border: 1px solid rgba(255,255,255, 0.2);
+  background-color: rgba(0,0,0, 0.4);
+  border: 1px solid rgba(255,255,255, 0.4);
   transition: flex-grow 240ms;
   font-size: 150%;
 }
