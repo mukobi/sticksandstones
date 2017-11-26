@@ -157,6 +157,10 @@ html, body {
   line-height: 40px;
 }
 
+.single_content.take-up-all-columns {
+  grid-column: 1 / end;
+}
+
 .single_content:hover h3 {
   font-size: 40px;
   text-decoration: underline;
