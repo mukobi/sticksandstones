@@ -47,8 +47,8 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0,0,0, 0.2);
-  border: 1px solid rgba(255,255,255, 0.2);
+  background-color: rgba(0,0,0, 0.4);
+  border: 1px solid rgba(255,255,255, 0.4);
   padding: 4vw;
 }
 
@@ -85,8 +85,8 @@ html, body {
   flex-grow: 1;
   text-align: center;
   text-decoration: none;
-  background-color: rgba(0,0,0, 0.2);
-  border: 1px solid rgba(255,255,255, 0.2);
+  background-color: rgba(0,0,0, 0.4);
+  border: 1px solid rgba(255,255,255, 0.4);
   transition: flex-grow 240ms;
   font-size: 150%;
 }
@@ -187,4 +187,16 @@ html, body {
 
 .single_content:hover p {
   top: -10px;
+}
+
+/* special effects */
+
+canvas.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -5;
+  opacity:0.4;
 }
