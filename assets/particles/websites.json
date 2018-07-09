@@ -1,24 +1,19 @@
 {"particles":{
     "number":{
-      "value":80
+      "value":150
     },
     "color":{
-      "value":"random"
+      "value":"#ffffff"
     },
     "shape":{
-      "type":"image",
-      "image":{
-        "src":"images/other/fire.png",
-        "height":100,
-        "width":70
-      }
+      "type":"circle"
     },
     "size":{
-      "value":35,
+      "value":4,
       "random":true,
       "anim":{
         "enable":true,
-        "speed":30
+        "speed":5
       }
     },
     "line_linked":{
@@ -26,7 +21,7 @@
     },
     "move":{
       "out_mode":"out",
-      "speed":5,
+      "speed":4,
       "random":true,
       "direction":"top"
     }
@@ -35,22 +30,12 @@
     "detect_on":"window",
     "events":{
       "onhover":{
-        "enable":true,
+        "enable":false,
         "mode":"repulse"
       },
       "onclick":{
         "enable":true,
-        "mode":"bubble"
-      }
-    },
-    "modes":{
-      "repulse":{
-        "distance":80
-      },
-      "bubble":{
-        "distance":200,
-        "size":70,
-        "duration":0.3
+        "mode":"push"
       }
     }
   }
